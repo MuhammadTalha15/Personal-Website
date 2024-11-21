@@ -1,0 +1,53 @@
+:root {
+    --background-color: #080808;
+    --font-color: #fff;
+    --sec-font-color: #dbdbdb;
+    --secondary-color: #146ef5;
+    --hover-color: #0d408d;
+
+    --Poppins: 'Poppins', sans-serif;
+    --Ccmfortaa: 'Comfortaa', serif;
+    --Itim: "Itim", cursive;
+}
+
+.ser-card{
+    height: 20vmax;
+    width: 20vmax;
+    background: linear-gradient(-45deg ,rgba(50, 50, 50, 0.1), rgba(225, 255, 225, 0.1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    cursor: var(--pointer-cur);
+}
+
+.ser-card:hover{
+    background-color: rgba(124, 124, 124, 0.2);
+}
+
+.ser-card-cont-cnt{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: center;
+}
+
+.ser-card-img{
+    width: 4vmax;
+    filter: invert(46%) sepia(55%) saturate(7302%) hue-rotate(206deg) brightness(97%) contrast(99%);
+}
+
+.ser-card-head{
+    font-family: var(--Poppins);
+    font-size: 1.7vmax;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.ser-card-p{
+    color: var(--sec-font-color);
+    font-size: .85vmax;
+    font-family: var(--Poppins);
+}

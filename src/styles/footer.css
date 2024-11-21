@@ -1,0 +1,117 @@
+:root{
+    --Poppins-font: 'Poppins',sans-serif;
+    --cursive-font: 'Comfortaa',cursivv;
+    --Roboto-font: 'Roboto',sans-serif;
+    --diff-color: #14b8a6;
+    --txt-light: #ececec;
+    --txt-dark: #b5b5b5;
+    --pointer-cur: url(../assets/Icons/cursor-pointer.png), auto;
+    --pointer-txt: url(../assets/Icons/text.png), auto;
+}
+  
+  .footer{
+    height: 60vh;
+    width: 100%;
+    background-color: #050505;
+  }
+  
+  .uppr-txt-cnt{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .txt-cnt{
+    height: 55%;
+    width: 70%;
+    border-top: 1.5px solid #6f6f6f;
+    border-bottom: 1.5px solid #6f6f6f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ftr-upr-txt{
+    font-size: 1vmax;
+    font-family: var(--Poppins-font);
+    color: #6f6f6f;
+  }
+
+  .ftr-lgo-cnt{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ftr-lgo{
+    width: 15vmax;
+    cursor: pointer;
+  }
+
+  .ftr-nav-cnt{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul{
+    list-style: none;
+    width: 30vmax;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li{
+    display: inline-block;
+  }
+
+  ul li a{
+    color: #6f6f6f;
+    font-family: var(--Poppins-font);
+    font-size: 1vmax;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  ul li a:hover{
+    color: #bbbbbb;
+  }
+
+  .ftr-scl-lnk-cnt{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul.scl{
+    list-style: none;
+    width: 18vmax;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ftr-scl-img{
+    width: 1.5vmax;
+    filter: invert(43%) sepia(15%) saturate(7%) hue-rotate(322deg) brightness(97%) contrast(91%);
+  }
+
+  .cpy-rht-cnt{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cpy-rgt-txt{
+    font-size: .8vmax;
+    font-family: var(--Poppins-font);
+    color: #6f6f6f;
+  }

@@ -1,0 +1,91 @@
+:root {
+    --background-color: #080808;
+    --font-color: #fff;
+    --sec-font-color: #dbdbdb;
+    --secondary-color: #146ef5;
+    --hover-color: #0d408d;
+
+    --Poppins: 'Poppins', sans-serif;
+    --Ccmfortaa: 'Comfortaa', serif;
+    --Itim: "Itim", cursive;
+}
+
+.card {
+    height: 15vmax;
+    width: 28vmax;
+    background: linear-gradient(-45deg ,rgba(50, 50, 50, 0.1), rgba(225, 255, 225, 0.1));
+    transition: 0.2s;
+}
+
+.card:hover{
+    background-color: rgba(124, 124, 124, 0.2);
+}
+
+.card:hover .project-link{
+    color: var(--secondary-color);
+}
+
+.img {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1.5vmax;
+}
+
+.project-ico-img{
+    width: 2vmax;
+    filter: invert(46%) sepia(55%) saturate(7302%) hue-rotate(206deg) brightness(97%) contrast(99%);
+    pointer-events: none;
+    user-select: none;
+}
+
+.heading {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1.5vmax;
+}
+
+.project-inner-heading{
+    color: var(--secondary-color);
+    font-family: var(--Poppins);
+    font-size: 1.5vmax;
+    font-weight: 500;
+}
+
+.description {
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1.5vmax;
+}
+
+.project-description{
+    font-family: var(--Poppins);
+    font-size: .95vmax;
+    color: var(--sec-font-color);
+}
+
+.link{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1.5vmax;
+}
+
+.project-link{
+    color: var(--sec-font-color);
+    font-family: var(--Poppins);
+    font-size: 1vmax;
+    text-decoration: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.project-link:hover{
+    text-decoration: underline;
+}
