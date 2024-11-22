@@ -22,10 +22,10 @@ import Stack from '../assets/Logo/stack-overflow.svg'
 const Home = () => {
 
     const [text] = useTypewriter({
-        words: ['Computer Science Student.', 'Web Developer.', 'Programmer.'],
+        words: ['Frontend Developer.', 'Backend Developer.', 'Web Designer.', 'Programmer.', 'SEO Expert.'],
         loop: {},
-        typeSpeed: 100,
-        deleteSpeed: 100,
+        typeSpeed: 80,
+        deleteSpeed: 80,
         delaySpeed: 2000,
     });
     return (
@@ -34,12 +34,12 @@ const Home = () => {
                 <div className="cont-cnt">
                     <h1 className="greet">Hello, I am</h1>
                     <h2 className="name">Muhammad Talha</h2>
-                    <h2 className="prof">Web Developer</h2>
+                    <h2 className="prof">{text}<Cursor /></h2>
                     <p className="des">Experienced Web Developer, Designer. Programmer, SEO Expert and a Passionate Student.</p>
                     <p className="note">Currently Seeking for Freelance Projects</p>
                     <div className="btn-cnt">
                         <Link to='#' target='_blank' className='active hero-btn'>Resume</Link>
-                        <Link to='#' target='_blank' className='hero-btn'>Explore Work</Link>
+                        {/* <Link to='#' target='_blank' className='hero-btn'>Explore Work</Link> */}
                     </div>
                 </div>
             </section>
@@ -65,6 +65,7 @@ const Home = () => {
                     <ProjectCard projectLink={'https://www.github.com'} image={JavascriptLogo} projectHeading='Tic Tac Toe Game' projectDescription='A classic Tic Tac Toe game created in vanilla JavaScript, offering a smooth and interactive experience with a simple, user-friendly interface.' />
                     <ProjectCard projectLink={'https://www.github.com'} image={PythonLogo} projectHeading='QR Code Generator' projectDescription='A robust QR code generator built with Python, enabling you to create customized QR codes quickly and easily.' />
                 </div>
+                <Link to='/Projects' className='hero-btn'>More Projects</Link>
             </section>
 
             <section className='frth-section'>

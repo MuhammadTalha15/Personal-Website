@@ -8,12 +8,7 @@ import { Link, useLocation } from 'react-router-dom';
 const Navbar = () => {
 
   const path = useLocation();
-  const [headerClass, setheaderClass] = useState('header');
   const [navbarClass, setnavbarClass] = useState('navbar');
-
-  // useEffect(() => {
-  //   setheaderClass((prevHead)=> (prevHead === 'header') ? 'header-active' : 'header');
-  // }, [navbarClass]);
 
   const navbarToggle = () => {
     setnavbarClass((prevClass) => (prevClass === 'navbar') ? 'navbar-active' : 'navbar');
@@ -26,7 +21,7 @@ const Navbar = () => {
 
   return (
     <>
-    <header className={headerClass}>
+    <header className='header'>
       <Link to="/">
         <img className='logo' src={Logo} alt="Logo" width={'50%'} />
       </Link>
