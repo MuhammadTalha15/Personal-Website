@@ -41,10 +41,10 @@ const Footer = () => {
         </div>
         <div className="ftr-scl-lnk-cnt">
           <ul className='scl'>
-            <li><a href="https://www.facebook.com/profile.php?id=100092518021987" target='_blank'><img className='ftr-scl-img' src={Facebook} alt="" /></a></li>
-            <li><a href="https://www.instagram.com/ttlha._15/" target='_blank'><img className='ftr-scl-img' src={Instagram} alt="" /></a></li>
-            <li><a href="https://github.com/MuhammadTalha15" target='_blank'><img className='ftr-scl-img' src={Github} alt="" /></a></li>
-            <li><a href="https://stackoverflow.com/users/23203699/muhammad-talha" target='_blank'><img className='ftr-scl-img' src={Stack} alt="" /></a></li>
+            <li><a title='Facebook' href="https://www.facebook.com/profile.php?id=100092518021987" target='_blank'><img className='ftr-scl-img' src={Facebook} alt="" /></a></li>
+            <li><a title='Instagram' href="https://www.instagram.com/ttlha._15/" target='_blank'><img className='ftr-scl-img' src={Instagram} alt="" /></a></li>
+            <li><a title='Github' href="https://github.com/MuhammadTalha15" target='_blank'><img className='ftr-scl-img' src={Github} alt="" /></a></li>
+            <li><a title='StackOverflow' href="https://stackoverflow.com/users/23203699/muhammad-talha" target='_blank'><img className='ftr-scl-img' src={Stack} alt="" /></a></li>
           </ul>
         </div>
         <div className="cpy-rht-cnt">

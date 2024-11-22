@@ -11,9 +11,9 @@ const Navbar = () => {
   const [headerClass, setheaderClass] = useState('header');
   const [navbarClass, setnavbarClass] = useState('navbar');
 
-  useEffect(() => {
-    setheaderClass((prevHead)=> (prevHead === 'header') ? 'header-active' : 'header');
-  }, [navbarClass]);
+  // useEffect(() => {
+  //   setheaderClass((prevHead)=> (prevHead === 'header') ? 'header-active' : 'header');
+  // }, [navbarClass]);
 
   const navbarToggle = () => {
     setnavbarClass((prevClass) => (prevClass === 'navbar') ? 'navbar-active' : 'navbar');
@@ -28,7 +28,7 @@ const Navbar = () => {
     <>
     <header className={headerClass}>
       <Link to="/">
-        <img className='logo' src={Logo} alt="Logo" />
+        <img className='logo' src={Logo} alt="Logo" width={'50%'} />
       </Link>
       <nav id='navbar' className={navbarClass}>
         <ul>
@@ -40,7 +40,7 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <button className='btnWrpr' onClick={navbarToggle}></button>
+      <div className='btnWrpr' onClick={navbarToggle}></div>
 
     </header>
     </>

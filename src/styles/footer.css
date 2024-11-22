@@ -1,18 +1,19 @@
-:root{
-    --Poppins-font: 'Poppins',sans-serif;
-    --cursive-font: 'Comfortaa',cursivv;
-    --Roboto-font: 'Roboto',sans-serif;
-    --diff-color: #14b8a6;
-    --txt-light: #ececec;
-    --txt-dark: #b5b5b5;
-    --pointer-cur: url(../assets/Icons/cursor-pointer.png), auto;
-    --pointer-txt: url(../assets/Icons/text.png), auto;
+:root {
+  --background-color: #080808;
+  --font-color: #fff;
+  --sec-font-color: #dbdbdb;
+  --secondary-color: #146ef5;
+  --hover-color: #0d408d;
+
+  --Poppins: 'Poppins', sans-serif;
+  --Ccmfortaa: 'Comfortaa', serif;
+  --Itim: "Itim", cursive;
 }
   
   .footer{
     height: 60vh;
     width: 100%;
-    background-color: #050505;
+    background-color: #020202;
   }
   
   .uppr-txt-cnt{
@@ -35,7 +36,7 @@
 
   .ftr-upr-txt{
     font-size: 1vmax;
-    font-family: var(--Poppins-font);
+    font-family: var(--Poppins);
     color: #6f6f6f;
   }
 
@@ -73,7 +74,7 @@
 
   ul li a{
     color: #6f6f6f;
-    font-family: var(--Poppins-font);
+    font-family: var(--Poppins);
     font-size: 1vmax;
     text-decoration: none;
     transition: 0.3s;
@@ -112,6 +113,6 @@
 
   .cpy-rgt-txt{
     font-size: .8vmax;
-    font-family: var(--Poppins-font);
+    font-family: var(--Poppins);
     color: #6f6f6f;
   }
