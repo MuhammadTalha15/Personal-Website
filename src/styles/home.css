@@ -294,6 +294,65 @@ html{
     }
 }
 
+@media (max-width: 600px){
+
+    .cont-cnt {
+        height: 80vmax;
+        /* width: 80vmax;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; */
+    }
+
+    .greet {
+        font-size: 8vmin;
+        line-height: 6vmin;
+    }
+
+    .name {
+        font-size: 9vmin;
+    }
+
+    .prof {
+        font-size: 13vmin;
+        line-height: 13vmin;
+        text-align: center;
+        /* background-color: red; */
+        height: 20vmin;
+    }
+
+    .des {
+        font-size: 3.5vmin;
+        width: 90vmin;
+        text-align: center;
+        margin-top: 8vmin;
+    }
+
+    .note {
+        font-size: 3.5vmin;
+        width: 45vmax;
+        text-align: center;
+        margin-top: 2vmin;
+    }
+
+    .btn-cnt {
+        height: 15vmin;
+        width: 25vmax;
+        margin-top: 3vmin;
+        /* border: 1px solid white; */
+    }
+    
+    .hero-btn {
+        height: 9vmin;
+        width: 25vmin;
+        border: 2px solid var(--secondary-color);
+        font-size: 3vmin;
+        border-radius: 1vmin;
+    }
+}
+
 
 /* -------------------------- */
 
@@ -523,7 +582,7 @@ html{
     height: 3vmax;
     width: 13vmax;
     border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
+    color: var(--font-color);
     font-family: var(--Poppins);
     font-size: 1vmax;
     text-decoration: none;
@@ -536,5 +595,4 @@ html{
 
 .contact-btn:hover{
     background-color: var(--secondary-color);
-    color: var(--sec-font-color);
 }

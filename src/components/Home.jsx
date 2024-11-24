@@ -22,7 +22,7 @@ import Stack from '../assets/Logo/stack-overflow.svg'
 const Home = () => {
 
     const [text] = useTypewriter({
-        words: ['Frontend Developer.', 'Backend Developer.', 'Web Designer.', 'Programmer.', 'SEO Expert.'],
+        words: ['Frontend Developer', 'Backend Developer', 'Web Designer', 'Programmer', 'SEO Expert'],
         loop: {},
         typeSpeed: 80,
         deleteSpeed: 80,
