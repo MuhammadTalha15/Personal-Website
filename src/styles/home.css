@@ -298,57 +298,58 @@ html{
 
     .cont-cnt {
         height: 80vmax;
-        /* width: 80vmax;
-        border: 1px solid white;
+        width: 90vmin;
+        /* border: 1px solid white; */
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-        flex-direction: column; */
+        flex-direction: column;
     }
 
     .greet {
-        font-size: 8vmin;
-        line-height: 6vmin;
+        font-size: 10vmin;
+        line-height: 8vmin;
     }
 
     .name {
-        font-size: 9vmin;
+        font-size: 9.5vmin;
     }
 
     .prof {
         font-size: 13vmin;
         line-height: 13vmin;
-        text-align: center;
+        text-align: left;
         /* background-color: red; */
         height: 20vmin;
     }
 
     .des {
-        font-size: 3.5vmin;
-        width: 90vmin;
-        text-align: center;
+        font-size: 4vmin;
+        width: 95vmin;
+        text-align: left;
         margin-top: 8vmin;
     }
 
     .note {
-        font-size: 3.5vmin;
-        width: 45vmax;
+        font-size: 4vmin;
+        width: auto;
         text-align: center;
         margin-top: 2vmin;
     }
 
     .btn-cnt {
-        height: 15vmin;
-        width: 25vmax;
+        height: 18vmin;
+        width: 28vmax;
         margin-top: 3vmin;
         /* border: 1px solid white; */
+        justify-content: flex-start;
     }
     
     .hero-btn {
-        height: 9vmin;
-        width: 25vmin;
+        height: 10vmin;
+        width: 32vmin;
         border: 2px solid var(--secondary-color);
-        font-size: 3vmin;
+        font-size: 4vmin;
         border-radius: 1vmin;
     }
 }
