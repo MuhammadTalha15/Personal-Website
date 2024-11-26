@@ -15,10 +15,10 @@ html{
 }
 
 .hero {
-    background-image: linear-gradient(#0009197e, #040e20), url(../assets/Images/hero-background.jpg);
+    background-image: linear-gradient(#0009197e, #040e20), url(../assets/Images/hero-background.webp);
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -505,7 +505,7 @@ html{
 .frth-section{
     height: 100vh;
     width: 100%;
-    background-image: url(../assets/Images/cont.png);
+    background-image: url(../assets/Images/cont.webp);
     background-position: center;
     background-size: 80%;
     background-repeat: no-repeat;

@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './styles/App.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
@@ -10,7 +8,6 @@ import FiveoThree from './components/fivezeorthree'
 
 
 function App() {
-  const [count, setCount] = useState(0);
 
   const Routes = createBrowserRouter([
     {
