@@ -18,7 +18,6 @@ html{
     background-image: linear-gradient(#0009197e, #040e20), url(../assets/Images/hero-background.webp);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     height: 100vh;
     width: 100%;
     display: flex;
