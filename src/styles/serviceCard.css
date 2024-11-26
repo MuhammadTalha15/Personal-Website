@@ -11,8 +11,8 @@
 }
 
 .ser-card{
-    height: 20vmax;
-    width: 20vmax;
+    height: 80vmin;
+    width: 80vmin;
     background: linear-gradient(-45deg ,rgba(50, 50, 50, 0.1), rgba(225, 255, 225, 0.1));
     display: flex;
     align-items: center;
@@ -50,4 +50,23 @@
     color: var(--sec-font-color);
     font-size: .85vmax;
     font-family: var(--Poppins);
+}
+
+@media(max-width:600px){
+    .ser-card{
+        height: 80vmin;
+        width: 80vmin;
+    }
+    
+    .ser-card-img{
+        width: 15vmin;
+    }
+    
+    .ser-card-head{
+        font-size: 6.5vmin;
+    }
+    
+    .ser-card-p{
+        font-size: 3.5vmin;
+    }
 }
