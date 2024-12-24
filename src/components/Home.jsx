@@ -1,26 +1,13 @@
-import React from 'react'
 import { useRef, useEffect } from 'react'
 import '../styles/home.css'
 import '../styles/locomotive-scroll.css'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import LocomotiveScroll from 'locomotive-scroll'
 import { Link } from 'react-router-dom';
-import ServiceCard from './serviceCard';
-import ProjectCard from './projectCard'
-import Footer from './Footer'
+import { Helmet } from 'react-helmet'
 
-import Trophy from '../assets/Icons/Trophy.png'
-import Bug from '../assets/Icons/Bug.png'
-import Light from '../assets/Icons/lightning.png'
-import Clock from '../assets/Icons/Clock.png'
-
-import JavascriptLogo from '../assets/Logo/js.png'
-import PythonLogo from '../assets/Logo/py.png'
-
-import Facebook from '../assets/Logo/facebook.svg'
-import Instagram from '../assets/Logo/instagram.svg'
-import Github from '../assets/Logo/github.svg'
-import Stack from '../assets/Logo/stack-overflow.svg'
+import { ServiceCard, ProjectCard, Footer } from './imports'
+import { Trophy, Bug, Light, Clock, JavascriptLogo, CppLogo, Facebook, Instagram, Github, Stack } from './imports'
 
 const Home = () => {
 
@@ -35,16 +22,16 @@ const Home = () => {
     const containerRef = useRef(null);
 
     useEffect(() => {
-        // Initialize Locomotive Scroll
+
         const scroll = new LocomotiveScroll({
             el: containerRef.current,
             smooth: true,
-            multiplier: 5, // Scroll speed
-            class: 'is-reveal', // Class applied to elements on reveal
+            multiplier: 5,
+            class: 'is-reveal',
             smoothMobile: true
         });
 
-        // Clean up Locomotive Scroll on unmount
+
         return () => {
             scroll.destroy();
         };
@@ -52,6 +39,9 @@ const Home = () => {
 
     return (
         <>
+        <Helmet>
+            <title>Muhammad Talha | Website</title>
+        </Helmet>
             <main ref={containerRef} data-scroll-container>
                 <section className="hero">
                     <div className="cont-cnt">
@@ -62,7 +52,6 @@ const Home = () => {
                         <p className="note">Currently Seeking for Freelance Projects</p>
                         <div className="btn-cnt">
                             <Link to='#' target='_blank' className='active hero-btn'>Resume</Link>
-                            {/* <Link to='#' target='_blank' className='hero-btn'>Explore Work</Link> */}
                         </div>
                     </div>
                 </section>
@@ -84,9 +73,9 @@ const Home = () => {
                     <h2 className="sec-section-mn-head">My Latest Projects</h2>
                     <p className="sec-section-des">Discover My Latest Creations that showcase the Designing Innovations and Digital Essentials. Feel free to Explore for More.</p>
                     <div className="prjct-crd-cnt">
-                        <ProjectCard projectLink={'https://www.github.com'} image={JavascriptLogo} projectHeading='Todo List App' projectDescription='A sleek and efficient to-do list app built with vanilla JavaScript, designed to help you manage tasks effortlessly with a clean and intuitive interface.' />
-                        <ProjectCard projectLink={'https://www.github.com'} image={JavascriptLogo} projectHeading='Tic Tac Toe Game' projectDescription='A classic Tic Tac Toe game created in vanilla JavaScript, offering a smooth and interactive experience with a simple, user-friendly interface.' />
-                        <ProjectCard projectLink={'https://www.github.com'} image={PythonLogo} projectHeading='QR Code Generator' projectDescription='A robust QR code generator built with Python, enabling you to create customized QR codes quickly and easily.' />
+                        <ProjectCard projectLink={'https://github.com/MuhammadTalha15/Todo-List-App'} image={JavascriptLogo} projectHeading='Todo List App' projectDescription='A sleek and efficient to-do list app built with vanilla JavaScript, designed to help you manage tasks effortlessly with a clean and intuitive interface.' />
+                        <ProjectCard projectLink={'https://github.com/MuhammadTalha15/Tic-Tac-Toe'} image={JavascriptLogo} projectHeading='Tic Tac Toe Game' projectDescription='A classic Tic Tac Toe game created in vanilla JavaScript, offering a smooth and interactive experience with a simple, user-friendly interface.' />
+                        <ProjectCard projectLink={'https://github.com/MuhammadTalha15/Tic-Tac-Toe-C-'} image={CppLogo} projectHeading='Game in C++' projectDescription='A fully-functional Tic Tac Toe clone developed in C++, providing a seamless and engaging gameplay experience.' />
                     </div>
                     <Link to='/Projects' className='hero-btn'>More Projects</Link>
                 </section>

@@ -1,9 +1,8 @@
-import React from 'react'
-import  '../styles/navbar.css';
-import App from '../App';
-import Logo from '../assets/Logo/logo.png'
+
 import { useState, useEffect } from "react";
+import { Logo } from './imports';
 import { Link, useLocation } from 'react-router-dom';
+import  '../styles/navbar.css';
 
 const Navbar = () => {
 

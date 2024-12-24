@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react'
 import '../styles/footer.css'
-import Logo from '../assets/Logo/footer-Logo.png'
-import Facebook from '../assets/Logo/facebook.svg'
-import Instagram from '../assets/Logo/instagram.svg'
-import Github from '../assets/Logo/github.svg'
-import Stack from '../assets/Logo/stack-overflow.svg'
+import {FooterLogo, Facebook, Instagram, Github, Stack } from './imports'
 import { Link, useLocation } from 'react-router-dom'
 
 const Footer = () => {
@@ -29,7 +25,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="ftr-lgo-cnt">
-          <img className='ftr-lgo' src={Logo} alt="Footer Logo" />
+          <img className='ftr-lgo' src={FooterLogo} alt="Footer Logo" />
         </div>
         <div className="ftr-nav-cnt">
           <ul>

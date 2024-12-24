@@ -2,9 +2,7 @@ import { useState } from 'react'
 import './styles/App.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import FiveoThree from './components/fivezeorthree'
+import { Navbar, Home , About, FiveoThree } from './components/imports'
 
 
 function App() {
@@ -16,7 +14,7 @@ function App() {
     },
     {
       path: '/About',
-      element: <><FiveoThree/></>
+      element: <> <Navbar/><About/></>
     },
     {
       path: '/Projects',

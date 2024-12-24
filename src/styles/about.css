@@ -1,0 +1,158 @@
+:root {
+    --background-color: #040e20 ;
+    --font-color: #fff;
+    --sec-font-color: #dbdbdb;
+    --secondary-color: #0a6ed3;
+    --hover-color: #0d408d;
+
+    --Poppins: 'Poppins', sans-serif;
+    --Ccmfortaa: 'Comfortaa', serif;
+    --Itim: "Itim", cursive;
+}
+
+.abt-mn{
+    height: 100vh;
+    width: 100%;
+}
+
+.abt-sec{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/Images/about-hero.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.tp-head-cnt{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.head{
+    font-size: 2.5vmax;
+    font-weight: 400;
+    font-family: var(--Poppins);
+    color: var(--font-color);
+    opacity: 0;
+    animation: fade-in 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+.head-aftr{
+    font-size: 3.5vmax;
+    line-height: 2vmax;
+    font-weight: 500;
+    font-family: var(--Poppins);
+    color: var(--secondary-color);
+    opacity: 0;
+    animation: fade-in 1s cubic-bezier(0.77, 0, 0.175, 1) .5s forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(6vmax);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0vmax);
+    }
+}
+
+.abt-cont-cnt{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+
+.abt-cont{
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    height: 25vmax;
+    width: 30vmax;
+    opacity: 0;
+    animation: fade-out 1.1s cubic-bezier(0.77, 0, 0.175, 1) 1s forwards;
+}
+
+th{
+    /* background-color: red; */
+    width: 13vmax;
+    text-align: left;
+    color: var(--secondary-color);
+}
+
+td{
+    color: var(--font-color);
+}
+
+th, td{
+    font-family: var(--Poppins);
+    font-size: 1.1vmax;
+}
+
+.abt-txt-cnt{
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 5vmax;
+    gap: 2vmax;
+}
+
+.bfr{
+    font-size: 1.1vmax;
+    color: var(--font-color);
+    font-family: var(--Poppins);
+    opacity: 0;
+    animation: fade-out 1.1s cubic-bezier(0.77, 0, 0.175, 1) 1s forwards;
+}
+
+.aftr{
+    font-size: 1.1vmax;
+    color: var(--font-color);
+    font-family: var(--Poppins);
+    opacity: 0;
+    animation: fade-out 1.1s cubic-bezier(0.77, 0, 0.175, 1) 1s forwards;
+}
+
+.abt-hero-btn{
+    height: 3vmax;
+    width: auto;
+    padding: 0 3vmax;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    font-family: var(--Poppins);
+    font-size: 1vmax;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    border-radius: .3vmax;
+    animation: fade-out 1.1s cubic-bezier(0.77, 0, 0.175, 1) 1s forwards;
+    opacity: 0;
+}
+
+.abt-hero-btn:hover {
+    background-color: var(--hover-color);
+}
+
+
+@keyframes fade-out{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
