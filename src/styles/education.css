@@ -1,0 +1,111 @@
+:root {
+    --background-color: #040e20;
+    --font-color: #fff;
+    --sec-font-color: #dbdbdb;
+    --secondary-color: #0a6ed3;
+    --hover-color: #0d408d;
+
+    --Poppins: 'Poppins', sans-serif;
+    --Ccmfortaa: 'Comfortaa', serif;
+    --Itim: "Itim", cursive;
+}
+
+.Educard {
+    height: 15vmax;
+    width: 35vmax;
+    background: linear-gradient(-45deg ,rgba(50, 50, 50, 0.1), rgba(225, 255, 225, 0.1));
+    transition: 0.2s;
+}
+
+.Educard:hover{
+    background-color: rgba(124, 124, 124, 0.2);
+}
+
+.Educard:hover .project-link{
+    color: var(--secondary-color);
+}
+
+.img {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1.5vmax;
+}
+
+.edu-ico-img{
+    width: 3vmax;
+    filter: invert(46%) sepia(55%) saturate(7302%) hue-rotate(206deg) brightness(97%) contrast(99%);
+    pointer-events: none;
+    user-select: none;
+}
+
+.heading {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1.5vmax;
+}
+
+.edu-inner-heading{
+    color: var(--secondary-color);
+    font-family: var(--Poppins);
+    font-size: 2vmax;
+    font-weight: 500;
+}
+
+.subhead {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1.5vmax;
+}
+
+.inr-subhead{
+    color: var(--sec-font-color);
+    font-family: var(--Poppins);
+    font-size: 1.3vmax;
+    font-weight: 500;
+}
+
+.desc {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1.5vmax;
+}
+
+.edu-description{
+    font-family: var(--Poppins);
+    font-size: .95vmax;
+    color: var(--sec-font-color);
+}
+
+.time{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1.5vmax;
+}
+
+.inr-time{
+    font-family: var(--Poppins);
+    font-size: .95vmax;
+    color: var(--sec-font-color);
+}
+
+.link{
+    font-size: 1vmax;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--Poppins);
+    transition: 0.3s;
+}
+
+.link:hover{
+    text-decoration: underline;
+}

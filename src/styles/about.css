@@ -1,5 +1,5 @@
 :root {
-    --background-color: #040e20 ;
+    --background-color: #040e20;
     --font-color: #fff;
     --sec-font-color: #dbdbdb;
     --secondary-color: #0a6ed3;
@@ -10,12 +10,7 @@
     --Itim: "Itim", cursive;
 }
 
-.abt-mn{
-    height: 100vh;
-    width: 100%;
-}
-
-.abt-sec{
+.abt-sec {
     height: 100vh;
     width: 100%;
     background-image: url(../assets/Images/about-hero.png);
@@ -23,16 +18,16 @@
     background-position: center;
 }
 
-.tp-head-cnt{
-    height: 30vh;
+.tp-head-cnt {
+    height: 25vh;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
 }
 
-.head{
+.head {
     font-size: 2.5vmax;
     font-weight: 400;
     font-family: var(--Poppins);
@@ -41,9 +36,9 @@
     animation: fade-in 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
 
-.head-aftr{
+.head-aftr {
     font-size: 3.5vmax;
-    line-height: 2vmax;
+    line-height: 2.5vmax;
     font-weight: 500;
     font-family: var(--Poppins);
     color: var(--secondary-color);
@@ -63,13 +58,13 @@
     }
 }
 
-.abt-cont-cnt{
-    height: 70vh;
+.abt-cont-cnt {
+    height: 75vh;
     width: 100%;
     display: flex;
 }
 
-.abt-cont{
+.abt-cont {
     height: 100%;
     width: 50%;
 
@@ -78,37 +73,38 @@
     justify-content: center;
 }
 
-table{
+table {
     height: 25vmax;
     width: 30vmax;
     opacity: 0;
     animation: fade-out 1.1s cubic-bezier(0.77, 0, 0.175, 1) 1s forwards;
 }
 
-th{
+th {
     /* background-color: red; */
     width: 13vmax;
     text-align: left;
     color: var(--secondary-color);
 }
 
-td{
+td {
     color: var(--font-color);
 }
 
-th, td{
+th,
+td {
     font-family: var(--Poppins);
     font-size: 1.1vmax;
 }
 
-.abt-txt-cnt{
+.abt-txt-cnt {
     align-items: flex-start;
     flex-direction: column;
     padding: 0 5vmax;
     gap: 2vmax;
 }
 
-.bfr{
+.bfr {
     font-size: 1.1vmax;
     color: var(--font-color);
     font-family: var(--Poppins);
@@ -116,7 +112,7 @@ th, td{
     animation: fade-out 1.1s cubic-bezier(0.77, 0, 0.175, 1) 1s forwards;
 }
 
-.aftr{
+.aftr {
     font-size: 1.1vmax;
     color: var(--font-color);
     font-family: var(--Poppins);
@@ -124,7 +120,7 @@ th, td{
     animation: fade-out 1.1s cubic-bezier(0.77, 0, 0.175, 1) 1s forwards;
 }
 
-.abt-hero-btn{
+.abt-hero-btn {
     height: 3vmax;
     width: auto;
     padding: 0 3vmax;
@@ -147,12 +143,87 @@ th, td{
 }
 
 
-@keyframes fade-out{
-    from{
+@keyframes fade-out {
+    from {
         opacity: 0;
     }
 
-    to{
+    to {
         opacity: 1;
     }
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.abt-second-sec {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-color: #040e20;
+}
+
+.second-head-cnt {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.second-head {
+    font-size: 3vmax;
+    color: var(--secondary-color);
+    font-family: var(--Poppins);
+    font-weight: 500;
+    line-height: 4vmax;
+}
+
+.second-des {
+    font-size: 1.1vmax;
+    color: var(--sec-font-color);
+    font-family: var(--Poppins);
+    width: 50vmax;
+    font-weight: 400;
+    line-height: 1.5vmax;
+    text-align: center;
+}
+
+.card-cnt{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.abt-edu-sec{
+    height: auto;
+    width: 100%;
+    background-image: url(../assets/Images/about-hero-invert.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.edu-head-cnt{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3vmax 0;
+}
+
+.edu-crd-cnt{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vmax;
+    flex-wrap: wrap;
+    padding: 5vmax 0;
 }

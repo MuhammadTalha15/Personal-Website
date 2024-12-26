@@ -1,15 +1,39 @@
-import React from 'react'
+import { useEffect, useRef } from 'react'
 import '../styles/about.css'
+import '../styles/locomotive-scroll.css'
+import LocomotiveScroll from 'locomotive-scroll'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
+import { ExpertiseCard, ServiceCard, EducationCard, Footer } from './imports.jsx'
+import { Trophy, Bug, Light, Clock, JavascriptLogo, CppLogo, School, Coding, Seo, Open } from './imports'
 
 const About = () => {
+
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+
+    const scroll = new LocomotiveScroll({
+      el: containerRef.current,
+      smooth: true,
+      multiplier: 5,
+      class: 'is-reveal',
+      smoothMobile: true
+    });
+
+
+    return () => {
+      scroll.destroy();
+    };
+  }, []);
+
   return (
     <>
       <Helmet>
         <title>About | Muhammad Talha</title>
+        <meta name="description" content="I am Muhammad Talha, an Intermediate Computer Science student currently studying in college. With a passion for Computer Engineering and Computer Sciences, I am dedicated to enhancing my skills and knowledge in the field. As an intermediate-level computer science student, I am deeply immersed in various technology projects, showcasing a versatile skill set in web development, desktop applications, and data science. My primary tools include JavaScript, Python, React, Express, MongoDB, and C++."></meta>
       </Helmet>
-      <main className='abt-mn'>
+      <main ref={containerRef} data-scroll-container>
         <section className='abt-sec'>
           <div className="tp-head-cnt">
             <h1 className="head">ABOUT ME</h1>
@@ -51,6 +75,33 @@ const About = () => {
             </div>
           </div>
         </section>
+
+        <section className="abt-second-sec">
+          <div className="second-head-cnt">
+            <h2 className="second-head">Expertise Area</h2>
+            <p className="second-des">Delivering comprehensive solutions across development, optimization, and collaboration to create cutting-edge, high-performance web experiences.</p>
+          </div>
+          <div className="card-cnt">
+            <ServiceCard image={Trophy} heading={'Expertise in Figma to Websites'} description={'Seamlessly transform your designs from Figma to fully functional websites with my expertise, ensuring pixel-perfect precision and responsive interactivity.'} />
+            <ServiceCard image={Bug} heading={'Comprehensive Testing'} description={'Ensure your projects are robust and error-free with my comprehensive testing services, covering functionality, performance, and user experience.'} />
+            <ServiceCard image={Light} heading={'Interactivity and Responsiveness'} description={'Enhance user experience with dynamic interactivity and seamless responsiveness, ensuring your website looks and performs flawlessly on all devices.'} />
+            <ServiceCard image={Clock} heading={'Product Delivery on Time'} description={'Depend on timely and efficient product delivery, ensuring your projects are completed and launched as scheduled without compromising quality.'} />
+          </div>
+        </section>
+
+        <section className="abt-edu-sec">
+          <div className="edu-head-cnt">
+            <h2 className="second-head">Education and Certifications</h2>
+            <p className="second-des">Showcasing academic achievements and the foundational knowledge that drives expertise in Information Technology and Computer Sciences.</p>
+          </div>
+          <div className="edu-crd-cnt">
+            <EducationCard image={School} heading="College Certificate" subhead="Intermediate Computer-Sciences" desc="Bahria College Anchorage, Islamabad" time="(2023 - Present)" />
+            <EducationCard image={School} heading="Matriculation Certificate" subhead="Computer-Sciences" desc="Bahria Foundation College Anchorage, Islamabad" time="(2021 - 2022)" />
+            <EducationCard image={School} heading="FreeCodeCamp Certificate" subhead="Responsive Web Designs" desc="FreeCodeCamp.org" time="June 1, 2024" link="View Certificate" />
+          </div>
+        </section>
+
+        <Footer />
       </main>
     </>
   )

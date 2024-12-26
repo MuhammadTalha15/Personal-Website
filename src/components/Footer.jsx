@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import '../styles/footer.css'
 import {FooterLogo, Facebook, Instagram, Github, Stack } from './imports'
 import { Link, useLocation } from 'react-router-dom'
+import arrow from '../assets/Icons/up-arrow.png'
 
 const Footer = () => {
   const date = new Date();
@@ -19,6 +20,11 @@ const Footer = () => {
   return (
     <>
       <section className="footer">
+
+        {/* <button className="scroll-up-btn" role='button' onClick={scrollFooterTop}>
+          <img src={arrow} alt="" className="scroll-img" />
+        </button> */}
+
         <div className="uppr-txt-cnt">
           <div className="txt-cnt">
             <p className="ftr-upr-txt">Your Vission, My Expertise Feel free to Contact for your Solutions and Products.</p>

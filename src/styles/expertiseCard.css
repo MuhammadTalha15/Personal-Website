@@ -1,0 +1,77 @@
+:root {
+    --background-color: #040e20 !important;
+    --font-color: #fff;
+    --sec-font-color: #dbdbdb;
+    --secondary-color: #0a6ed3;
+    --hover-color: #0d408d;
+
+    --Poppins: 'Poppins', sans-serif;
+    --Ccmfortaa: 'Comfortaa', serif;
+    --Itim: "Itim", cursive;
+}
+
+.Expcard {
+    height: 20vmax;
+    width: 20vmax;
+    background: linear-gradient(-45deg ,rgba(50, 50, 50, 0.1), rgba(225, 255, 225, 0.1));
+    transition: 0.2s;
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Expcard:hover{
+    background-color: rgba(124, 124, 124, 0.2);
+}
+
+.Expcard:hover .project-link{
+    color: var(--secondary-color);
+}
+
+.exp-img {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1.5vmax;
+    /* background-color: green; */
+}
+
+.expertise-ico-img{
+    width: 3.5vmax;
+    filter: invert(46%) sepia(55%) saturate(7302%) hue-rotate(206deg) brightness(97%) contrast(99%);
+    pointer-events: none;
+    user-select: none;
+}
+
+.exp-heading {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1.5vmax;
+}
+
+.expertise-inner-heading{
+    color: var(--secondary-color);
+    font-family: var(--Poppins);
+    font-size: 1.9vmax;
+    font-weight: 500;
+}
+
+.exp-description {
+    height: 35%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    padding: 0 1.5vmax;
+}
+
+.expertise-description{
+    font-family: var(--Poppins);
+    font-size: .90vmax;
+    color: var(--sec-font-color);
+    /* text-align: center; */
+}

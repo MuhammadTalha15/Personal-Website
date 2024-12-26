@@ -6,8 +6,8 @@ import LocomotiveScroll from 'locomotive-scroll'
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet'
 
-import { ServiceCard, ProjectCard, Footer } from './imports'
-import { Trophy, Bug, Light, Clock, JavascriptLogo, CppLogo, Facebook, Instagram, Github, Stack } from './imports'
+import { ExpertiseCard, ServiceCard, ProjectCard, Footer } from './imports'
+import { Trophy, Bug, Light, Clock, JavascriptLogo, CppLogo, Facebook, Instagram, Github, Stack, Coding, Seo, Open, Script } from './imports'
 
 const Home = () => {
 
@@ -39,9 +39,9 @@ const Home = () => {
 
     return (
         <>
-        <Helmet>
-            <title>Muhammad Talha | Website</title>
-        </Helmet>
+            <Helmet>
+                <title>Muhammad Talha | Website</title>
+            </Helmet>
             <main ref={containerRef} data-scroll-container>
                 <section className="hero">
                     <div className="cont-cnt">
@@ -61,11 +61,12 @@ const Home = () => {
                     <h2 className="sec-section-mn-head">Exceeding Expectations</h2>
                     <p className="sec-section-des">Offering bespoke web development solutions that blend innovation with precision to elevate your digital presence.</p>
                     <div className="crd-cnt">
-                        <ServiceCard image={Trophy} heading={'Expertise in Figma to Websites'} description={'Seamlessly transform your designs from Figma to fully functional websites with my expertise, ensuring pixel-perfect precision and responsive interactivity.'} />
-                        <ServiceCard image={Bug} heading={'Comprehensive Testing'} description={'Ensure your projects are robust and error-free with my comprehensive testing services, covering functionality, performance, and user experience.'} />
-                        <ServiceCard image={Light} heading={'Interactivity and Responsiveness'} description={'Enhance user experience with dynamic interactivity and seamless responsiveness, ensuring your website looks and performs flawlessly on all devices.'} />
-                        <ServiceCard image={Clock} heading={'Product Delivery on Time'} description={'Depend on timely and efficient product delivery, ensuring your projects are completed and launched as scheduled without compromising quality.'} />
+                        <ExpertiseCard image={Coding} heading='Website, WebApp Development' desc='Developing responsive, dynamic web applications using advanced frameworks and technologies to ensure optimal performance and user engagement.' />
+                        <ExpertiseCard image={Seo} heading='Search Engine Optimization' desc='Optimizing websites with advanced SEO strategies, including keyword research, on-page enhancements, and technical audits, to improve search engine rankings and drive organic traffic.' />
+                        <ExpertiseCard image={Script} heading='Scripting and Automation' desc='Developing robust scripts and automation tools to streamline processes, optimize workflows, and handle complex tasks with precision and efficiency.' />
+                        <ExpertiseCard image={Open} heading='Open Source Contribution' desc='Actively engaging in open-source projects to enhance software quality, develop innovative features, and foster collaboration within the developer community.' />
                     </div>
+                    <Link to='/About' className='hero-btn'>Learn More</Link>
                 </section>
 
                 <section className="thir-section">
