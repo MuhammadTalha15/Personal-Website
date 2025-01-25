@@ -3,15 +3,11 @@ import '../styles/expertiseCard.css'
 const ExpertiseCard = (props) => {
   return (
     <>
-      <div className="Expcard">
-        <div className="exp-img">
+      <div className="ser-card">
+        <div className="ser-card-cont-cnt">
           <img src={props.image} alt="" className="expertise-ico-img" />
-        </div>
-        <div className="exp-heading">
-          <h2 className="expertise-inner-heading">{props.heading}</h2>
-        </div>
-        <div className="exp-description">
-          <p className="expertise-description">{props.desc}</p>
+          <h2 className="ser-card-head">{props.heading}</h2>
+          <p className="ser-card-p">{props.desc}</p>
         </div>
       </div>
     </>

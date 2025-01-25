@@ -10,32 +10,28 @@
     --Itim: "Itim", cursive;
 }
 
-.Expcard {
+.ser-card{
     height: 20vmax;
     width: 20vmax;
     background: linear-gradient(-45deg ,rgba(50, 50, 50, 0.1), rgba(225, 255, 225, 0.1));
-    transition: 0.2s;
     display: flex;
-    /* align-items: flex-start; */
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    transition: 0.2s;
+    cursor: var(--pointer-cur);
 }
 
-.Expcard:hover{
+.ser-card:hover{
     background-color: rgba(124, 124, 124, 0.2);
 }
 
-.Expcard:hover .project-link{
-    color: var(--secondary-color);
-}
-
-.exp-img {
-    height: 20%;
+.ser-card-cont-cnt{
+    height: 80%;
+    width: 80%;
     display: flex;
-    align-items: center;
-    justify-content: left;
-    padding: 0 1.5vmax;
-    /* background-color: green; */
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: center;
 }
 
 .expertise-ico-img{
@@ -45,33 +41,35 @@
     user-select: none;
 }
 
-.exp-heading {
-    height: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding: 0 1.5vmax;
-}
-
-.expertise-inner-heading{
+.ser-card-head{
+    font-family: var(--Poppins);
+    font-size: 1.7vmax;
     color: var(--secondary-color);
-    font-family: var(--Poppins);
-    font-size: 1.9vmax;
-    font-weight: 500;
+    font-weight: 400;
 }
 
-.exp-description {
-    height: 35%;
-    /* background-color: red; */
-    display: flex;
-    align-items: flex-start;
-    justify-content: left;
-    padding: 0 1.5vmax;
-}
-
-.expertise-description{
-    font-family: var(--Poppins);
-    font-size: .90vmax;
+.ser-card-p{
     color: var(--sec-font-color);
-    /* text-align: center; */
+    font-size: .85vmax;
+    font-family: var(--Poppins);
+}
+
+@media(max-width:600px){
+    .ser-card{
+        height: 80vmin;
+        width: 80vmin;
+    }
+
+
+    .expertise-ico-img{
+        width: 15vmin;
+    }
+    
+    .ser-card-head{
+        font-size: 6.5vmin;
+    }
+    
+    .ser-card-p{
+        font-size: 3.5vmin;
+    }
 }
