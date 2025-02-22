@@ -9,12 +9,21 @@
   --Ccmfortaa: 'Comfortaa', serif;
   --Itim: "Itim", cursive;
 }
+
+:root{
+  /* --background-color-new: #0B0B0B !important; */
+  --secondary-color-light-new: #21D0A4;
+  --secondary-color-new: #327867;
+  --secondary-color-dark-new: #225246;
+  --font-color-new: #fefefe;
+  --tile-color: #333333;
+}
   
   .footer{
     position: relative;
     height: 60vh;
     width: 100%;
-    background-color: #01060f;
+    background-color: #070707;
   }
   
   .uppr-txt-cnt{

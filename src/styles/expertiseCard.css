@@ -10,22 +10,31 @@
     --Itim: "Itim", cursive;
 }
 
-.ser-card{
-    height: 20vmax;
-    width: 20vmax;
+:root{
+    --background-color-new: #0E0E0E;
+    --secondary-color-light-new: #21D0A4;
+    --secondary-color-new: #327867;
+    --secondary-color-dark-new: #225246;
+    --font-color-new: #fefefe;
+    --tile-color: #333333;
+}
+
+.exp-ser-card{
+    height: 19vmax;
+    width: 19vmax;
     background: linear-gradient(-45deg ,rgba(50, 50, 50, 0.1), rgba(225, 255, 225, 0.1));
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 7px;
     transition: 0.2s;
-    cursor: var(--pointer-cur);
 }
 
-.ser-card:hover{
+.exp-ser-card:hover{
     background-color: rgba(124, 124, 124, 0.2);
 }
 
-.ser-card-cont-cnt{
+.exp-ser-card-cont-cnt{
     height: 80%;
     width: 80%;
     display: flex;
@@ -36,26 +45,26 @@
 
 .expertise-ico-img{
     width: 3.5vmax;
-    filter: invert(46%) sepia(55%) saturate(7302%) hue-rotate(206deg) brightness(97%) contrast(99%);
+    filter: invert(72%) sepia(19%) saturate(1516%) hue-rotate(113deg) brightness(90%) contrast(93%);
     pointer-events: none;
     user-select: none;
 }
 
-.ser-card-head{
+.exp-ser-card-head{
     font-family: var(--Poppins);
     font-size: 1.7vmax;
-    color: var(--secondary-color);
+    color: var(--secondary-color-light-new);
     font-weight: 400;
 }
 
-.ser-card-p{
-    color: var(--sec-font-color);
+.exp-ser-card-p{
+    color: var(--font-color-new);
     font-size: .85vmax;
     font-family: var(--Poppins);
 }
 
 @media(max-width:600px){
-    .ser-card{
+    .exp-ser-card{
         height: 80vmin;
         width: 80vmin;
     }
@@ -65,11 +74,11 @@
         width: 15vmin;
     }
     
-    .ser-card-head{
+    .exp-ser-card-head{
         font-size: 6.5vmin;
     }
     
-    .ser-card-p{
+    .exp-ser-card-p{
         font-size: 3.5vmin;
     }
 }

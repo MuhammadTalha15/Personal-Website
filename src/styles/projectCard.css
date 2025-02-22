@@ -10,11 +10,21 @@
     --Itim: "Itim", cursive;
 }
 
+:root{
+    --background-color-new: #0E0E0E;
+    --secondary-color-light-new: #21D0A4;
+    --secondary-color-new: #327867;
+    --secondary-color-dark-new: #225246;
+    --font-color-new: #fefefe;
+    --tile-color: #333333;
+}
+
 .card {
-    height: 15vmax;
-    width: 28vmax;
+    height: 19vmax;
+    width: 19vmax;
     background: linear-gradient(-45deg ,rgba(50, 50, 50, 0.1), rgba(225, 255, 225, 0.1));
     transition: 0.2s;
+    border-radius: 7px;
 }
 
 .card:hover{
@@ -22,20 +32,21 @@
 }
 
 .card:hover .project-link{
-    color: var(--secondary-color);
+    color: var(--secondary-color-light-new);
 }
 
 .img {
     height: 25%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: left;
     padding: 0 1.5vmax;
+    padding-bottom: .5vmax;
 }
 
 .project-ico-img{
-    width: 2vmax;
-    filter: invert(46%) sepia(55%) saturate(7302%) hue-rotate(206deg) brightness(97%) contrast(99%);
+    width: 2.5vmax;
+    filter: invert(72%) sepia(19%) saturate(1516%) hue-rotate(113deg) brightness(90%) contrast(93%);
     pointer-events: none;
     user-select: none;
 }
@@ -49,9 +60,9 @@
 }
 
 .project-inner-heading{
-    color: var(--secondary-color);
+    color: var(--secondary-color-light-new);
     font-family: var(--Poppins);
-    font-size: 1.5vmax;
+    font-size: 1.7vmax;
     font-weight: 500;
 }
 
@@ -65,8 +76,8 @@
 
 .project-description{
     font-family: var(--Poppins);
-    font-size: .95vmax;
-    color: var(--sec-font-color);
+    font-size: .90vmax;
+    color: var(--font-color-new);
 }
 
 .link{
