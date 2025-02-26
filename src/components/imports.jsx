@@ -9,6 +9,7 @@ import ExpertiseCard from './expertiseCard'
 import EducationCard from './EducationCard'
 import ProjectCard from "./projectCard"
 import ServiceCard from "./serviceCard"
+import SkillsCard from "./Skillscard"
 import Footer from "./Footer"
 
 import Trophy from '../assets/Icons/Trophy.png'
@@ -23,11 +24,21 @@ import Instagram from '../assets/Logo/instagram.svg'
 import Github from '../assets/Logo/github.svg'
 import Stack from '../assets/Logo/stack-overflow.svg'
 
-import School from '../assets/Icons/school.png'
+import School from '../assets/Icons/education.png'
 import Coding from '../assets/Icons/coding.png'
 import Seo from '../assets/Icons/seo.png'
 import Open from '../assets/Icons/open.png'
 import Script from '../assets/Icons/script.png'
+
+import webDevelopment from '../assets/Icons/hardskills/development.png'
+import programming from '../assets/Icons/hardskills/nlp.png'
+import problemSolving from '../assets/Icons/hardskills/idea.png'
+import techskills from '../assets/Icons/hardskills/sheet.png'
+
+import teamLead from '../assets/Icons/softskills/team-leader.png'
+import adaptive from '../assets/Icons/softskills/adaptive.png'
+import conversation from '../assets/Icons/softskills/conversation.png'
+import accountability from '../assets/Icons/softskills/accountability.png'
 
 
 
@@ -43,6 +54,7 @@ export {
     EducationCard,
     ProjectCard,
     ServiceCard,
+    SkillsCard,
     Footer,
 
     Trophy,
@@ -62,6 +74,20 @@ export {
     Coding,
     Seo,
     Open,
-    Script
-    
+    Script,
+
+    // Hard Skills
+
+    webDevelopment,
+    programming,
+    problemSolving,
+    techskills,
+
+    // Soft Skills
+
+    teamLead,
+    adaptive,
+    conversation,
+    accountability
+
 }

@@ -10,11 +10,24 @@
     --Itim: "Itim", cursive;
 }
 
+:root{
+    --background-color-new: #0E0E0E;
+    --secondary-color-light-new: #21D0A4;
+    --secondary-color-new: #327867;
+    --secondary-color-dark-new: #225246;
+    --font-color-new: #fefefe;
+    --tile-color: #333333;
+}
+
 .Educard {
-    height: 15vmax;
+    height: 12vmax;
     width: 35vmax;
     background: linear-gradient(-45deg ,rgba(50, 50, 50, 0.1), rgba(225, 255, 225, 0.1));
     transition: 0.2s;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
 }
 
 .Educard:hover{
@@ -22,24 +35,35 @@
 }
 
 .Educard:hover .project-link{
-    color: var(--secondary-color);
+    color: var(--secondary-color-new);
 }
 
-.img {
-    height: 25%;
+.edu-img {
+    /* background-color: red; */
+    height: 100%;
+    width: 20%;
     display: flex;
     align-items: center;
-    justify-content: left;
-    padding: 0 1.5vmax;
+    justify-content: center;
+    padding-left: 2vmax;
 }
 
 .edu-ico-img{
     width: 3vmax;
-    filter: invert(46%) sepia(55%) saturate(7302%) hue-rotate(206deg) brightness(97%) contrast(99%);
+    filter: invert(72%) sepia(19%) saturate(1516%) hue-rotate(113deg) brightness(90%) contrast(93%);
     pointer-events: none;
     user-select: none;
 }
 
+.edu-crd-txt-cont{
+    /* background-color: red; */
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
 .heading {
     height: 20%;
     display: flex;
@@ -49,9 +73,9 @@
 }
 
 .edu-inner-heading{
-    color: var(--secondary-color);
+    color: var(--secondary-color-light-new);
     font-family: var(--Poppins);
-    font-size: 2vmax;
+    font-size: 1.7vmax;
     font-weight: 500;
 }
 
@@ -64,9 +88,9 @@
 }
 
 .inr-subhead{
-    color: var(--sec-font-color);
+    color: var(--font-color);
     font-family: var(--Poppins);
-    font-size: 1.3vmax;
+    font-size: 1.2vmax;
     font-weight: 500;
 }
 
@@ -81,7 +105,7 @@
 .edu-description{
     font-family: var(--Poppins);
     font-size: .95vmax;
-    color: var(--sec-font-color);
+    color: var(--font-color-new);
 }
 
 .time{
@@ -95,13 +119,13 @@
 .inr-time{
     font-family: var(--Poppins);
     font-size: .95vmax;
-    color: var(--sec-font-color);
+    color: var(--font-color-new);
 }
 
 .link{
     font-size: 1vmax;
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--secondary-color-light-new);
     font-family: var(--Poppins);
     transition: 0.3s;
 }

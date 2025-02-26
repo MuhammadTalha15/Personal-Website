@@ -1,8 +1,8 @@
 :root {
-    /* --background-color: #080808; */
-    /* --font-color: #fff; */
+    --background-color: #040e20 !important;
+    --font-color: #fff;
     --sec-font-color: #dbdbdb;
-    /* --secondary-color: #146ef5; */
+    --secondary-color: #0a6ed3;
     --hover-color: #0d408d;
 
     --Poppins: 'Poppins', sans-serif;
@@ -19,23 +19,22 @@
     --tile-color: #333333;
 }
 
-
-.ser-card{
+.skls-card{
     height: 19vmax;
     width: 19vmax;
     background: linear-gradient(-45deg ,rgba(50, 50, 50, 0.1), rgba(225, 255, 225, 0.1));
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.2s;
     border-radius: 7px;
+    transition: 0.2s;
 }
 
-.ser-card:hover{
+.skls-card:hover{
     background-color: rgba(124, 124, 124, 0.2);
 }
 
-.ser-card-cont-cnt{
+.skls-card-cont-cnt{
     height: 80%;
     width: 80%;
     display: flex;
@@ -44,41 +43,43 @@
     justify-content: center;
 }
 
-.ser-card-img{
+.skls-ico-img{
     width: 3.5vmax;
     filter: invert(72%) sepia(19%) saturate(1516%) hue-rotate(113deg) brightness(90%) contrast(93%);
     pointer-events: none;
     user-select: none;
 }
 
-.ser-card-head{
+.skls-card-head{
     font-family: var(--Poppins);
-    font-size: 1.6vmax;
+    font-size: 1.7vmax;
     color: var(--secondary-color-light-new);
-    font-weight: 400;
+    font-weight: 500;
+    margin-bottom: .5vmax;
 }
 
-.ser-card-p{
+.skls-card-p{
     color: var(--font-color-new);
     font-size: .85vmax;
     font-family: var(--Poppins);
 }
 
 @media(max-width:600px){
-    .ser-card{
+    .skls-card{
         height: 80vmin;
         width: 80vmin;
     }
-    
-    .ser-card-img{
+
+
+    .skls-ico-img{
         width: 15vmin;
     }
     
-    .ser-card-head{
+    .skls-card-head{
         font-size: 6.5vmin;
     }
     
-    .ser-card-p{
+    .skls-card-p{
         font-size: 3.5vmin;
     }
 }
