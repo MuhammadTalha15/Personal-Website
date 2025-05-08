@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react'
 import '../styles/home.css'
+import '../styles/test.scss'
 import '../styles/locomotive-scroll.css'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import LocomotiveScroll from 'locomotive-scroll'
